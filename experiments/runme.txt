@@ -1,0 +1,41 @@
+## DEFAULT
+
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 5 -m 200 --numRelevant 20 --topK 20 --numRepetitions 100 --groupType 0
+
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out2 -n 5 -m 200 --numRelevant 20 --topK 20 --numRepetitions 50 --groupType 1
+
+
+## RND vary group size
+
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 2 -m 200 --numRelevant 20 --topK 20 --numRepetitions 100 --groupType 0
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 3 -m 200 --numRelevant 20 --topK 20 --numRepetitions 100 --groupType 0
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 4 -m 200 --numRelevant 20 --topK 20 --numRepetitions 100 --groupType 0
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 6 -m 200 --numRelevant 20 --topK 20 --numRepetitions 100 --groupType 0
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 7 -m 200 --numRelevant 20 --topK 20 --numRepetitions 100 --groupType 0
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 8 -m 200 --numRelevant 20 --topK 20 --numRepetitions 100 --groupType 0
+
+
+## SIM vary group size
+
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out2 -n 2 -m 200 --numRelevant 20 --topK 20 --numRepetitions 50 --groupType 1
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out3 -n 3 -m 200 --numRelevant 20 --topK 20 --numRepetitions 50 --groupType 1
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out4 -n 4 -m 200 --numRelevant 20 --topK 20 --numRepetitions 50 --groupType 1
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out5 -n 6 -m 200 --numRelevant 20 --topK 20 --numRepetitions 50 --groupType 1
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out6 -n 7 -m 200 --numRelevant 20 --topK 20 --numRepetitions 50 --groupType 1
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out6 -n 8 -m 200 --numRelevant 20 --topK 20 --numRepetitions 50 --groupType 1
+
+
+## RND vary topK
+
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 5 -m 200 --numRelevant 5 --topK 5 --numRepetitions 100 --groupType 0
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 5 -m 200 --numRelevant 10 --topK 10 --numRepetitions 100 --groupType 0
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 5 -m 200 --numRelevant 50 --topK 50 --numRepetitions 100 --groupType 0
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out1 -n 5 -m 200 --numRelevant 100 --topK 100 --numRepetitions 100 --groupType 0
+
+
+## SIM vary topK
+
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out2 -n 5 -m 200 --numRelevant 5 --topK 5 --numRepetitions 50 --groupType 1
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out3 -n 5 -m 200 --numRelevant 10 --topK 10 --numRepetitions 50 --groupType 1
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out4 -n 5 -m 200 --numRelevant 50 --topK 50 --numRepetitions 50 --groupType 1
+./paretoAgg -I ./datasets/ML1M_N -O 2018.09_PA/out5 -n 5 -m 200 --numRelevant 100 --topK 100 --numRepetitions 50 --groupType 1
